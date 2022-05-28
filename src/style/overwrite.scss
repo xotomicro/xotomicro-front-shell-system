@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #d7dde5;
+}
+
+/* SECTIONS OF THE APP */
+.section-app {
+    display: grid;
+    gap: 1em;
+    padding: 6em;
+    text-align-last: center;
+
+    &__title {
+        color: blueviolet;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+    }
+}

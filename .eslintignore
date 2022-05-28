@@ -1,0 +1,12 @@
+# IGNORE ALL HTML FILES:
+*.html
+
+# IGNORE TS BUILD INFO
+*.tsbuildinfo
+
+# IGNORE MARKDOWN FILES
+*.md
+
+# IGNORE SYSTEM FILES
+src/utils/system.js
+
