@@ -1,16 +1,15 @@
 version: "3"
 services:
-    xotomicro-front-shell-system:
-        env_file:
-            - .env
-        build:
-            context: ./
-            dockerfile: docker/dockerfile.development
-            args:
-                - GITHUB_TOKEN=${GITHUB_TOKEN}
-        container_name: xotomicro-front-shell-system
-        ports:
-            - 7070:7070
-        volumes:
-            - ./:/app
-            
+  xotomicro-front-shell-system:
+    env_file:
+      - .env
+    build:
+      context: ./
+      dockerfile: docker/dockerfile.development
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    container_name: xotomicro-front-shell-system
+    ports:
+      - 7070:7070
+    volumes:
+      - ./:/app
